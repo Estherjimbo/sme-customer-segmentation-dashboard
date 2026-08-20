@@ -119,10 +119,10 @@ Power BI — interactive dashboard build, DAX measures, data visualization
 
 📁 Repository Contents
 
-├── SME_Customer_Segmentation_Dashboard.pbix  Power BI dashboard file
-├── dashboard_screenshot.png                  Static preview of the dashboard
-├── README.md                                 This file
-🖼️ Dashboard Preview
+├── SME_Customer_Segmentation_Dashboard.pbix 
+├── dashboard_screenshot.png                  
+├── README.md                                 
+
 
 
 
