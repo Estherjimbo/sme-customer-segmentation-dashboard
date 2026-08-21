@@ -1,8 +1,8 @@
-📊 SME Customer Segmentation Dashboard
+##  📊 SME Customer Segmentation Dashboard
 
 An interactive Power BI dashboard that segments Nigerian SME banking customers by value, credit risk, and digital adoption — built to help a bank or fintech move from guessing who their best customers are, to knowing, with data.
 
-🎯 The Problem
+## 🎯 The Problem
 
 SMEs, and the institutions that serve them, often treat all customers the same way, without a clear view of who's high value, who's a credit risk, and who's underusing digital banking channels.
 
@@ -14,7 +14,7 @@ Which customers are underusing digital banking (upsell opportunity)?
 Does location or industry sector affect value or risk?
 What is each segment actually worth to the business, in revenue?
 
-🗂️ Dataset
+## 🗂️ Dataset
 
 A simulated dataset of 1,000 Nigerian SME banking customers, covering:
 
@@ -26,7 +26,7 @@ Relationship: customer lifetime (years)
 
 ⚠️ Note: This is a synthetic/sample dataset built for portfolio and learning purposes, not real bank records.
 
-🧮 Methodology
+## 🧮 Methodology
 
 Since the dataset has no transaction-level dates, I adapted the classic RFM (Recency, Frequency, Monetary) framework to fit the data available, using three dimensions instead:
 
@@ -46,14 +46,14 @@ Segment	Description
 
 All scoring was built with live formulas in Excel (not hardcoded), so the logic recalculates automatically if the underlying data changes.
 
-💡 Key Insights
+## 💡 Key Insights
 
 49% of SME customers fall into the At-Risk segment — the single biggest finding, driven by overdue loans and low credit scores. This should be the bank's top priority for credit review.
 Champions make up only 3.5% of customers but contribute a disproportionate share of revenue — a small, high-value group worth protecting with dedicated relationship management.
 Loyal Traditional customers (10%) are high-value but low on digital adoption — the clearest upsell opportunity for mobile and internet banking products.
 Revenue and risk vary noticeably across zones and sectors (explore this live in the dashboard using the slicers).
 
-✅ Recommendations
+## ✅ Recommendations
 
 Champions: Assign relationship managers, offer premium products, prioritize retention.
 Loyal Traditional: Target with digital banking onboarding campaigns. High value customers who aren't yet using digital channels are the fastest ROI opportunity.
@@ -61,9 +61,9 @@ Growth Potential: Offer working capital products or transaction incentives to mo
 At-Risk: Immediate priority for credit review, loan restructuring conversations, or tighter monitoring.
 Low Engagement: Investigate whether these are dormant accounts to re-engage, or churn candidates.
 
-🧑‍💻 DAX Measures
+## 🧑‍💻 DAX Measures
 
-DAX
+```DAX
 
 Total Customers = COUNTROWS('Cleaned_Data')
 
@@ -81,8 +81,9 @@ Champions Count =
 CALCULATE(COUNTROWS('Cleaned_Data'), 'Cleaned_Data'[Customer_Segment] = "Champions")
 
 Avg Digital Score = AVERAGE('Cleaned_Data'[Digital_Adoption_Score])
+```
 
-What each measure does:
+ **What each measure does:**
 
 Total Customers — counts all rows in the dataset, used on the KPI card and as the denominator for At Risk %
 
@@ -96,23 +97,23 @@ Champions Count — filtered count used for segment specific reporting
 
 Avg Digital Score — average digital adoption score, used in the segment profile matrix to compare digital maturity across segments
 
-⚠️ Limitations
+## ⚠️ Limitations
 
-Synthetic data: segments and insights are based on simulated, not real, customer behavior, so business conclusions are illustrative rather than production ready.
+- **Synthetic data:** segments and insights are based on simulated, not real, customer behavior, so business conclusions are illustrative rather than production ready.
 
-No true "Recency" dimension: the dataset had no transaction dates, so I adapted RFM to Value + Risk + Digital Adoption instead of true Recency/Frequency/Monetary.
+- **No true "Recency" dimension:** the dataset had no transaction dates, so I adapted RFM to Value + Risk + Digital Adoption instead of true Recency/Frequency/Monetary.
 
-No time-series trend: the dashboard is a single snapshot; it doesn't show how customers move between segments over time.
+- **No time-series trend:** the dashboard is a single snapshot; it doesn't show how customers move between segments over time.
 
-Risk thresholds are simplified: credit score cutoffs (580/700) were chosen using general reference ranges, not validated against real Nigerian banking risk models.
+- **Risk thresholds are simplified:** credit score cutoffs (580/700) were chosen using general reference ranges, not validated against real Nigerian banking risk models.
 
-No statistical validation: segments were built using business logic and percentile scoring, not a formal clustering algorithm like K-means, so segment boundaries are rule based rather than data derived.#
+- **No statistical validation:** segments were built using business logic and percentile scoring, not a formal clustering algorithm like K-means, so segment boundaries are rule based rather than data derived.#
 
-💬 Feedback
+## 💬 Feedback
 
 Feedback is welcome, particularly from anyone working in data analytics or banking. Feel free to open an issue on this repository or reach out via LinkedIn.
 
-🛠️ Tools Used
+## 🛠️ Tools Used
 
 Excel — data cleaning and segmentation logic (formulas, not hardcoded values)
 Power BI — interactive dashboard build, DAX measures, data visualization
