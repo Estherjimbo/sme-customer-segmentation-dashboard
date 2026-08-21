@@ -1,6 +1,6 @@
 ##  📊 SME Customer Segmentation Dashboard
 
-An interactive Power BI dashboard that segments Nigerian SME banking customers by value, credit risk, and digital adoption — built to help a bank or fintech move from guessing who their best customers are, to knowing, with data.
+An interactive Power BI dashboard that segments Nigerian SME customers by value, credit risk, and digital adoption — built to help a bank, fintech or enterprise move from guessing who their best customers are, to knowing, with data.
 
 ## 🎯 The Problem
 
@@ -48,18 +48,18 @@ All scoring was built with live formulas in Excel (not hardcoded), so the logic 
 
 ## 💡 Key Insights
 
-49% of SME customers fall into the At-Risk segment — the single biggest finding, driven by overdue loans and low credit scores. This should be the bank's top priority for credit review.
-Champions make up only 3.5% of customers but contribute a disproportionate share of revenue — a small, high-value group worth protecting with dedicated relationship management.
-Loyal Traditional customers (10%) are high-value but low on digital adoption — the clearest upsell opportunity for mobile and internet banking products.
-Revenue and risk vary noticeably across zones and sectors (explore this live in the dashboard using the slicers).
+- 49% of SME customers fall into the At-Risk segment — the single biggest finding, driven by overdue loans and low credit scores. This should be the enterprise's top priority for credit review.
+- Champions make up only 3.5% of customers but contribute a disproportionate share of revenue — a small, high-value group worth protecting with dedicated relationship management.
+- Loyal Traditional customers (10%) are high-value but low on digital adoption — the clearest upsell opportunity for mobile and internet banking products.
+- Revenue and risk vary noticeably across zones and sectors (explore this live in the dashboard using the slicers).
 
 ## ✅ Recommendations
 
-Champions: Assign relationship managers, offer premium products, prioritize retention.
-Loyal Traditional: Target with digital banking onboarding campaigns. High value customers who aren't yet using digital channels are the fastest ROI opportunity.
-Growth Potential: Offer working capital products or transaction incentives to move them toward Champion status.
-At-Risk: Immediate priority for credit review, loan restructuring conversations, or tighter monitoring.
-Low Engagement: Investigate whether these are dormant accounts to re-engage, or churn candidates.
+**Champions:** Assign relationship managers, offer premium products, prioritize retention.
+**Loyal Traditional:** Target with digital banking onboarding campaigns. High value customers who aren't yet using digital channels are the fastest ROI opportunity.
+**Growth Potential:** Offer working capital products or transaction incentives to move them toward Champion status.
+**At-Risk:** Immediate priority for credit review, loan restructuring conversations, or tighter monitoring.
+**Low Engagement:** Investigate whether these are dormant accounts to re-engage, or churn candidates.
 
 ## 🧑‍💻 DAX Measures
 
