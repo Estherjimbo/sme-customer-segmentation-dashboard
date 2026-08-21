@@ -109,20 +109,15 @@ Avg Digital Score — average digital adoption score, used in the segment profil
 
 - **No statistical validation:** segments were built using business logic and percentile scoring, not a formal clustering algorithm like K-means, so segment boundaries are rule based rather than data derived.#
 
-## 💬 Feedback
-
-Feedback is welcome, particularly from anyone working in data analytics or banking. Feel free to open an issue on this repository or reach out via LinkedIn.
-
 ## 🛠️ Tools Used
 
 Excel — data cleaning and segmentation logic (formulas, not hardcoded values)
 Power BI — interactive dashboard build, DAX measures, data visualization
 
-📁 Repository Contents
+## 💬 Feedback
 
-├── SME_Customer_Segmentation_Dashboard.pbix 
-├── dashboard_screenshot.png                  
-├── README.md                                 
+Feedback is welcome, particularly from anyone working in data analytics or banking. Feel free to open an issue on this repository or reach out via LinkedIn.
+
 
 
 
